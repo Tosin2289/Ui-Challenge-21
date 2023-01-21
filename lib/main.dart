@@ -7,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,3 +27,18 @@ class HomePage extends StatelessWidget {
     return Scaffold();
   }
 }
+
+class Boxmodel {
+  final img;
+  final String text;
+  final String country;
+  Boxmodel({required this.country, required this.img, required this.text});
+}
+
+List<Boxmodel> screens = [
+  Boxmodel(country: "Canada", img: "assets/image2.jpg", text: "Coconut Tree"),
+  Boxmodel(
+      country: "Senegal", img: "assets/image3.jpg", text: "Tall Coconut Tree"),
+  Boxmodel(
+      country: "India", img: "assets/image1.jpg", text: "Coconut Palm Tree")
+];
